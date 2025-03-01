@@ -1,7 +1,7 @@
 self.addEventListener("install", (event) => {
     event.waitUntil(
       caches.open("demo-deprati-v1").then((cache) => {
-        return cache.addAll(["/", "/depratidemo.html", "/style.css", "/script.js"]);
+        return cache.addAll(["/", "/index.html", "/style.css", "/script.js"]);
       })
     );
   });
